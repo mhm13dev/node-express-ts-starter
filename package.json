@@ -1,7 +1,7 @@
 {
-  "name": "node-express-ts",
+  "name": "node-express-ts-starter",
   "version": "1.0.0",
-  "description": "Node.js, Express with TypeScript",
+  "description": "Node.js, Express and TypeScript Starter Project",
   "author": "mhm13dev",
   "private": true,
   "license": "MIT",
