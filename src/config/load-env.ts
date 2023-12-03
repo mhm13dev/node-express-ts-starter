@@ -11,7 +11,8 @@ import dotEnvExpand from "dotenv-expand";
  * ```
  * .env.development.local, .env.production.local, .env.test.local
  * .env.development, .env.production, .env.test
- * .env, .env.local
+ * .env.local
+ * .env
  * ```
  */
 export const loadEnv = () => {
