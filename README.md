@@ -12,7 +12,7 @@ This is a starter project for Node.js, Express and TypeScript.
 ### Installing
 
 ```bash
-$ git clone git+ssh://github.com/mhm13dev/node-express-ts-starter.git --depth 1 <project-name>
+$ git clone https://github.com/mhm13dev/node-express-ts-starter.git --depth 1 <project-name>
 $ cd <project-name>
 $ rm -rf .git
 $ git init
