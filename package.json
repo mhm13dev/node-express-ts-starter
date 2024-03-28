@@ -9,15 +9,23 @@
   "scripts": {
     "build": "cross-env NODE_ENV=production tsc --project tsconfig.json && tsconfig-replace-paths --project tsconfig.json",
     "start": "cross-env NODE_ENV=production node dist/index.js",
-    "start:dev": "cross-env NODE_ENV=development nodemon --exec 'ts-node -r tsconfig-paths/register' src/index.ts"
+    "start:dev": "cross-env NODE_ENV=development nodemon --exec 'ts-node -r tsconfig-paths/register' src/index.ts",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "format": "prettier --write ."
   },
   "devDependencies": {
     "@types/cors": "^2.8.17",
     "@types/express": "^4.17.21",
     "@types/morgan": "^1.9.9",
     "@types/node": "^20.10.2",
+    "@typescript-eslint/eslint-plugin": "^7.4.0",
+    "@typescript-eslint/parser": "^7.4.0",
     "cross-env": "^7.0.3",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
     "nodemon": "^3.0.2",
+    "prettier": "^3.2.5",
     "ts-node": "^10.9.1",
     "tsconfig-paths": "^4.2.0",
     "tsconfig-replace-paths": "^0.0.14",

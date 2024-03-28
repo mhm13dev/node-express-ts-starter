@@ -1,4 +1,5 @@
-import express, { NextFunction, Request, Response } from "express";
+import type { Request, Response } from "express";
+import express from "express";
 import helmet from "helmet";
 import morgan from "morgan";
 import cors from "cors";
@@ -23,7 +24,7 @@ app.use((_req, _res, next) => {
   next(new AppError("Path Not Found", 404));
 });
 
-app.use((err: any, _req: Request, res: Response, _next: NextFunction) => {
+app.use((err: any, _req: Request, res: Response) => {
   console.error(err);
   res.status(err.statusCode ?? 500).json({
     status: err.isOperational ? "fail" : "error",

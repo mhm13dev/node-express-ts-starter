@@ -21,26 +21,26 @@ export const loadEnv = () => {
   // Load environment specific local env file
   const envSpecificLocalEnvPath = path.join(
     projectRoot,
-    `.env.${process.env.NODE_ENV || "development"}.local`
+    `.env.${process.env.NODE_ENV || "development"}.local`,
   );
   if (fs.existsSync(envSpecificLocalEnvPath)) {
     dotEnvExpand.expand(
       dotenv.config({
         path: envSpecificLocalEnvPath,
-      })
+      }),
     );
   }
 
   // Load environment specific env file
   const envSpecificEnvPath = path.join(
     projectRoot,
-    `.env.${process.env.NODE_ENV || "development"}`
+    `.env.${process.env.NODE_ENV || "development"}`,
   );
   if (fs.existsSync(envSpecificEnvPath)) {
     dotEnvExpand.expand(
       dotenv.config({
         path: envSpecificEnvPath,
-      })
+      }),
     );
   }
 
@@ -50,7 +50,7 @@ export const loadEnv = () => {
     dotEnvExpand.expand(
       dotenv.config({
         path: baseLocalEnvPath,
-      })
+      }),
     );
   }
 
@@ -60,7 +60,7 @@ export const loadEnv = () => {
     dotEnvExpand.expand(
       dotenv.config({
         path: baseEnvPath,
-      })
+      }),
     );
   }
 };
