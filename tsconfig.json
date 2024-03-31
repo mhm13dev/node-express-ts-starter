@@ -24,5 +24,5 @@
       "src/*": ["src/*"]
     }
   },
-  "exclude": [".vscode", "dist", "node_modules"]
+  "include": ["src/**/*"]
 }
