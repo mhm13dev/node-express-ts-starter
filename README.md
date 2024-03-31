@@ -6,8 +6,8 @@ This is a starter project for Node.js, Express and TypeScript.
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/en/) (>= 18.18.2)
-- [Yarn](https://yarnpkg.com/en/) (>= 1.22.19)
+- [Node.js](https://nodejs.org/en/) (>= 20.12.0 <21.0.0)
+- [Yarn](https://yarnpkg.com/en/) (>= 1.22.22 <2.0.0)
 
 ### Installing
 
@@ -53,6 +53,8 @@ The default value of `NODE_ENV` for different scripts is:
 - [Node.js](https://nodejs.org/en/) - JavaScript runtime
 - [Express](https://expressjs.com/) - Web framework
 - [TypeScript](https://www.typescriptlang.org/) - Typed superset of JavaScript
+- [ESLint](https://eslint.org/) - Linter
+- [Prettier](https://prettier.io/) - Code formatter
 
 ## Authors
 
