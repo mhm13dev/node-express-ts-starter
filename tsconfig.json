@@ -14,9 +14,8 @@
     "moduleResolution": "Node16",
     "resolveJsonModule": true,
     "rootDir": "./src",
-    "baseUrl": "./",
     "paths": {
-      "src/*": ["src/*"]
+      "src/*": ["./src/*"]
     },
 
     // Emit
