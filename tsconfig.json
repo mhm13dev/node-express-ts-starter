@@ -5,24 +5,34 @@
   "_version": "20.11.1",
 
   "compilerOptions": {
+    // Language and Environment
     "lib": ["ES2023"],
+    "target": "ES2022",
+
+    // Modules
     "module": "Node16",
     "moduleResolution": "Node16",
-    "target": "ES2022",
-    "esModuleInterop": true,
     "resolveJsonModule": true,
-
-    "strict": true,
-    "skipLibCheck": true,
-    "noImplicitAny": true,
-    "forceConsistentCasingInFileNames": true,
-
-    "outDir": "./dist",
     "rootDir": "./src",
     "baseUrl": "./",
     "paths": {
       "src/*": ["src/*"]
-    }
+    },
+
+    // Emit
+    "outDir": "./dist",
+
+    // Interop Constraints
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "verbatimModuleSyntax": true,
+
+    // Type Checking
+    "strict": true,
+    "noImplicitAny": true,
+
+    // Completeness
+    "skipLibCheck": true
   },
   "include": ["src/**/*"]
 }
