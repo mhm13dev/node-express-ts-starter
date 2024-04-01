@@ -252,7 +252,7 @@
     "@types/mime" "*"
     "@types/node" "*"
 
-"@typescript-eslint/eslint-plugin@^7.4.0":
+"@typescript-eslint/eslint-plugin@7.4.0":
   version "7.4.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-7.4.0.tgz#de61c3083842fc6ac889d2fc83c9a96b55ab8328"
   integrity sha512-yHMQ/oFaM7HZdVrVm/M2WHaNPgyuJH4WelkSVEWSSsir34kxW2kDJCxlXRhhGWEsMN0WAW/vLpKfKVcm8k+MPw==
@@ -269,7 +269,7 @@
     semver "^7.5.4"
     ts-api-utils "^1.0.1"
 
-"@typescript-eslint/parser@^7.4.0":
+"@typescript-eslint/parser@7.4.0":
   version "7.4.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-7.4.0.tgz#540f4321de1e52b886c0fa68628af1459954c1f1"
   integrity sha512-ZvKHxHLusweEUVwrGRXXUVzFgnWhigo4JurEj0dGF1tbcGh6buL+ejDdjxOQxv6ytcY1uhun1p2sm8iWStlgLQ==
@@ -1760,6 +1760,15 @@ type-is@~1.6.18:
   dependencies:
     media-typer "0.3.0"
     mime-types "~2.1.24"
+
+typescript-eslint@^7.4.0:
+  version "7.4.0"
+  resolved "https://registry.yarnpkg.com/typescript-eslint/-/typescript-eslint-7.4.0.tgz#2a9b35e99a6292e59ff72bce3ef56e10d8b20b40"
+  integrity sha512-8GYQsb/joknlAZEAs/kqonfrsAc98C5DoellmwHREPqKwSTKSY2YB93IwmvNuX6+WE5QkKc31X9wHo/UcpYXpw==
+  dependencies:
+    "@typescript-eslint/eslint-plugin" "7.4.0"
+    "@typescript-eslint/parser" "7.4.0"
+    "@typescript-eslint/utils" "7.4.0"
 
 typescript@^5.4.3:
   version "5.4.3"

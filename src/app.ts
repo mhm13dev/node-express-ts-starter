@@ -26,10 +26,17 @@ app.use((_req, _res, next) => {
 
 app.use((err: any, _req: Request, res: Response, _next: NextFunction) => {
   console.error(err);
-  res.status(err.statusCode ?? 500).json({
-    status: err.isOperational ? "fail" : "error",
-    message: err.isOperational ? err.message : "Something went wrong",
-  });
+  if (err instanceof AppError) {
+    res.status(err.statusCode).json({
+      status: "fail",
+      message: err.message,
+    });
+  } else {
+    res.status(500).json({
+      status: "error",
+      message: "Something went wrong",
+    });
+  }
 });
 
 export default app;
