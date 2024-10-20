@@ -6,8 +6,8 @@ This is a starter project for Node.js, Express and TypeScript.
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/en/) (>= 20.12.0 <21.0.0)
-- [Yarn](https://yarnpkg.com/en/) (>= 1.22.22 <2.0.0)
+- [Node.js](https://nodejs.org/en/) (>= 22.10.0)
+- [PNPM](https://pnpm.io) (>= 9.12.2)
 
 ### Installing
 
@@ -18,18 +18,18 @@ $ rm -rf .git
 $ git init
 $ git add .
 $ git commit -m "Initial commit"
-$ yarn install
+$ pnpm install
 ```
 
 ### Running
 
 ```bash
 Development:
-$ yarn start:dev
+$ pnpm start:dev
 
 Production:
-$ yarn build
-$ yarn start
+$ pnpm build
+$ pnpm start
 ```
 
 ### Environment Variables
@@ -51,6 +51,7 @@ The default value of `NODE_ENV` for different scripts is:
 ## Built With
 
 - [Node.js](https://nodejs.org/en/) - JavaScript runtime
+- [PNPM](https://pnpm.io/) - Package manager
 - [Express](https://expressjs.com/) - Web framework
 - [TypeScript](https://www.typescriptlang.org/) - Typed superset of JavaScript
 - [ESLint](https://eslint.org/) - Linter
