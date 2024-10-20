@@ -1,6 +1,6 @@
-# Node.js, Express and TypeScript Starter Template
+# Node.js, Express and TypeScript with CommonJS Modules Starter Template
 
-This is a starter template for Node.js, Express and TypeScript.
+This is a starter template for Node.js, Express and TypeScript with CommonJS Modules.
 
 ## Getting Started
 
