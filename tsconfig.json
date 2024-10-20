@@ -1,8 +1,8 @@
-// The config is extended from the base config: https://github.com/tsconfig/bases/blob/main/bases/node20.json
+// The config is extended from the base config: https://github.com/tsconfig/bases/blob/main/bases/node22.json
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "display": "Node 20",
-  "_version": "20.12.0",
+  "display": "Node 22",
+  "_version": "22.10.0",
 
   "compilerOptions": {
     // Language and Environment
