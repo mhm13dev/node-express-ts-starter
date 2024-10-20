@@ -1,6 +1,6 @@
-# Node.js, Express and TypeScript Starter Project
+# Node.js, Express and TypeScript Starter Template
 
-This is a starter project for Node.js, Express and TypeScript.
+This is a starter template for Node.js, Express and TypeScript.
 
 ## Getting Started
 
