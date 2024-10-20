@@ -23,7 +23,7 @@
     "eslint": "^9.13.0",
     "eslint-config-prettier": "^9.1.0",
     "nodemon": "^3.1.0",
-    "prettier": "^3.2.5",
+    "prettier": "^3.3.3",
     "ts-node": "^10.9.2",
     "tsconfig-paths": "^4.2.0",
     "tsconfig-replace-paths": "^0.0.14",
