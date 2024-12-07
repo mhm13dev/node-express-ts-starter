@@ -2,36 +2,37 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "display": "Node 22",
-  "_version": "22.10.0",
+  "_version": "22.12.0",
 
   "compilerOptions": {
-    // Language and Environment
+    /* Base Options: */
+    "target": "ES2023",
     "lib": ["ES2023"],
-    "target": "ES2022",
-
-    // Modules
-    "module": "Node16",
-    "moduleResolution": "Node16",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "allowJs": true,
     "resolveJsonModule": true,
+    "moduleDetection": "force",
+    "isolatedModules": true,
+
+    /* Strictness */
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "noImplicitAny": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* Transpilation with Typescript */
+    "module": "NodeNext",
+    "sourceMap": true,
     "rootDir": "./src",
+    "outDir": "./dist",
+
+    /* Path Mapping */
     "baseUrl": "./",
     "paths": {
       "src/*": ["src/*"]
-    },
-
-    // Emit
-    "outDir": "./dist",
-
-    // Interop Constraints
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-
-    // Type Checking
-    "strict": true,
-    "noImplicitAny": true,
-
-    // Completeness
-    "skipLibCheck": true
+    }
   },
-  "include": ["src/**/*"]
+  "include": ["src"]
 }
