@@ -1,6 +1,6 @@
 {
   "name": "node-express-ts-starter",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "Node.js, Express and TypeScript with CJS Modules Starter Template",
   "author": "mhm13dev",
   "private": true,
